@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Tailwind And Daisy Ui CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Css File Link -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main class="container mx-auto text-center">
+        <h2 class="text-[#4ade80] font-bold text-4xl">Choose Your Trees</h2>
+
+        <div class="grid grid-cols-12 gap-8">
+            <!-- Categories -->
+            <div class="bg-white card card-body shadow-2xl col-span-3">
+                <h2 class="font-bold text-2xl">Categories</h2>
+                <div class="space-y-3">
+                    <button id="allTressBtn" class="btn btn-success w-full"><i class="fa-solid fa-tree"></i>
+                        All Trees</button>
+
+                    <!-- Categories Container -->
+                    <div id="categoriesContainer" class="space-y-3">
+                        <!-- categories will be dynamically loaded here by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trees -->
+            <div class= "col-span-6">
+                <div id="treesContainer" class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+
+                      <!-- Dynamically Added Here -->
+                    <!-- <div class="card bg-base-100  shadow-sm">
+                        <figure>
+                            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                                alt="Shoes" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Card Title</h2>
+                            <p class="line-clamp-2">A card component has a figure, a body part, and inside body there
+                                are title and actions
+                                parts</p>
+                            <div class="badge badge-outline badge-success">Success</div>
+
+                            <div class="card-actions justify-between">
+                                <h2 class="text-3xl font-bold"><span class="text-red-500">$</span><span
+                                        class="text-[#4ade80]">500</span></h2>
+                                <button class="btn btn- btn-success">Add</button>
+
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+
+
+            <!-- Cart -->
+            <div class="bg-green-600 col-span-3">Cart</div>
+        </div>
+
+    </main>
+    <!-- JS -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
